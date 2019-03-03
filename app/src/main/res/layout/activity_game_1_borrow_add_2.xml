@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发布借菜 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comment_title_bar_tools" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="温馨提示：带必填为必填项" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/land_name"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:drawableRight="@drawable/v"
+                android:gravity="center_vertical"
+                android:hint="选择土地编号(必填)"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/borrow_name"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:gravity="center_vertical"
+                android:hint="蔬菜名称(必填)"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shop_number_background"
+                android:gravity="top|left"
+                android:hint="描述"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/borrow_num"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shop_number_background"
+                    android:hint="可换数量(必填)"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="#ffaaaaaa"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/borrow_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/shop_number_background"
+                    android:drawableRight="@drawable/v"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="颗"
+                    android:textColor="#ff666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/borrow_price"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shop_number_background"
+                    android:hint="单价(必填)"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="#ffaaaaaa"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="元"
+                    android:textColor="#ff666666" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/br_date1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:drawableRight="@drawable/tools_date"
+                android:gravity="center_vertical"
+                android:hint="预定换菜日期(必填)"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:hint="手机号码(必填)"
+                android:inputType="phone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/qq"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:hint="QQ"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:hint="Email"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:hint="农场地址"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/cade"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shop_number_background"
+                android:hint="邮编"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffcccccc"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="上传图片"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ff58bf42"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="发布"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

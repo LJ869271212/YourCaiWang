@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comment_title_bar_tools" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/huodong_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ff111111"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/huodong_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ff999999"
+                android:textSize="14sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/woyaobaoming"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:background="#ff16c407"
+                    android:text="我要报名"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" >
+                </Button>
+
+                <Button
+                    android:id="@+id/fabuzuoping"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#ff16c407"
+                    android:text="发布参赛作品"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/yujirenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/baomingrenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/shengyurenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/huodongfeiyong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ff999999" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chufadi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/chufashijian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/fanhuishijian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/mudidi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" />
+
+            <TextView
+                android:id="@+id/jiaotongfangshi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ff999999" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/baomingjiezhiriqi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" />
+
+            <com.westars.framework.view.image.SquareImageView
+                android:id="@+id/images"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="活动介绍"
+                android:textColor="#ff16c407"
+                android:textSize="12.5sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/huodongjieshao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="活动规则"
+                android:textColor="#ff16c407"
+                android:textSize="12.5sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/huodongguize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="行程安排"
+                android:textColor="#ff16c407"
+                android:textSize="12.5sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/xignchenganpai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ff999999"
+                android:textSize="12sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ff999999" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="已报名："
+                android:textColor="#ff999999"
+                android:textSize="12.5sp" >
+            </TextView>
+
+            <com.my3w.farm.activity.campaign.view.NoScrollListView
+                android:id="@+id/baominguser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="#ffffffff"
+                android:divider="#ffffffff"
+                android:dividerHeight="5px"
+                android:numColumns="1"
+                android:verticalSpacing="5dp" >
+            </com.my3w.farm.activity.campaign.view.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ff999999" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cansaizuoping"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="#ff16c407"
+                android:text="查看参赛作品"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

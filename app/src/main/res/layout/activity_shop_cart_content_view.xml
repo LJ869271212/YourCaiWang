@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/info_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/cart_delete" />
+
+    <com.westars.framework.view.image.SquareImageView
+        android:id="@+id/info_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:id="@+id/info_land"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select_3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/info_digital"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="32sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/info_acreage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="27sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="土地编号：SZA0105"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="适合种植： 叶菜类, 根茎类, 根茎类, 根茎类"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥7200"
+            android:textColor="#ffff0000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/info_number_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="-"
+                    android:textColor="#ff404040"
+                    android:textSize="15sp" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/info_number"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shop_number_background"
+                    android:gravity="center"
+                    android:textColor="#ff404040"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/info_number_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="+"
+                    android:textColor="#ff404040"
+                    android:textSize="15sp" >
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/info_number_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="#ff404040"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffffffff"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <com.westars.framework.view.core.CoreImageView
+        android:id="@+id/images"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:text="哥的西兰花出炉了"
+            android:textColor="#ff111111" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:text="这个是简要内容"
+            android:textColor="#ff333333" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:text="发布日期：2015-08-26 10:06:56"
+            android:textColor="#ff999999" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

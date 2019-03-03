@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.my3w.farm.activity.plant.view.PlantRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.my3w.farm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.westars.framework.view.image.SquareImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" >
+    </com.westars.framework.view.image.SquareImageView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="center"
+                android:src="@drawable/r" />
+
+            <com.westars.framework.view.image.RoundImageView
+                android:id="@+id/user_pic"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_nick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="September"
+            android:textColor="#ffffffff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2015"
+            android:textColor="#ffffffff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/shidu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/kongqishidu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#fffcab53"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/kongqishidu_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="空气湿度"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/turangshidu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#ff50d2c2"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/turangshidu_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="土壤湿度"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/eryanhuatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#ffba77ff"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/eryanhuatan_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ppm"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="二氧化碳"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/guangzhao"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/guangzhaodu"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#ff50d2c2"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/guangzhaodu_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="光照度"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wendu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/kongqiwendu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#fffcab53"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/kongqiwendu_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="°C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="空气温度"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/turangwendu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#ff50d2c2"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/turangwendu_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="°C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="土壤温度"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/eryanhuatan3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#ffba77ff"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/eryanhuatan3_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ppm"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="二氧化碳"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ph"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.westars.framework.view.progress.RoundProgressBar
+                        android:id="@+id/phzhi"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android_custom:roundColor="#40ffffff"
+                        android_custom:roundProgressColor="#ff50d2c2"
+                        android_custom:roundWidth="4dp"
+                        android_custom:textColor="#9A32CD"
+                        android_custom:textIsDisplayable="false"
+                        android_custom:textSize="18sp" >
+                    </com.westars.framework.view.progress.RoundProgressBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/phzhi_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PH值"
+                    android:textColor="#ffc9c6c4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.my3w.farm.activity.plant.view.PlantRelativeLayout>

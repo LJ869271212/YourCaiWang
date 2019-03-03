@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinnername">
+        <item>喷洒</item>
+        <item>滴灌</item>
+    </string-array>
+    <string-array name="spinnerxishi">
+        <item>填埋</item>
+        <item>抛洒</item>
+        <item>稀释</item>
+    </string-array>
+
+</resources>

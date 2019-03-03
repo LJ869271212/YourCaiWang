@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comment_title_bar_tools" />
+
+    <LinearLayout
+        android:id="@+id/title_select"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title_bar"
+        android:background="#ffffffff"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="筛选：" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/chufariqi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="出发日期" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/huodongricheng"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="活动日程" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/huodongdidian"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="活动地点" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/title_select"
+        android:background="#ffdddddd"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.westars.framework.view.list.ListExtView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/title_bottom"
+        android:layout_below="@+id/title_line"
+        android:divider="#ffffffff"
+        android:dividerHeight="0dp" >
+    </com.westars.framework.view.list.ListExtView>
+
+    <LinearLayout
+        android:id="@+id/title_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff58bf42"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/quanbuhuodong"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="全部活动"
+            android:textColor="#ffffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/xianshanghuodong"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="线上活动"
+            android:textColor="#ffffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/xianxiahuodong"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="线下活动"
+            android:textColor="#ffffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/huodongxiangce"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="活动相册"
+            android:textColor="#ffffffff" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comment_title_bar_shop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="筛选工具"
+                android:textColor="#ff1d1d26" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/select_background"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/select_txt"
+                    android:layout_width="118dp"
+                    android:layout_height="28dp"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:hint="请输入您要种工具"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#ff1d1d26"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/select_button"
+                    android:layout_width="32dp"
+                    android:layout_height="28dp"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/select_seed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ff546953"
+            android:padding="10dp"
+            android:text="选择类型"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <com.westars.framework.view.list.GridExtView
+        android:id="@+id/datas"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" >
+    </com.westars.framework.view.list.GridExtView>
+
+</LinearLayout>

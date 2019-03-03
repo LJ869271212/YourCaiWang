@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comment_title_bar_tools" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="活动报名"
+            android:textColor="#ff58bf42"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dynamicTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#ff999999"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dynamicDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#ff999999"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#ffeeeeee" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textColor="#ff999999"
+                android:textSize="15sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/namicName"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/shop_number_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话："
+                android:textColor="#ff999999"
+                android:textSize="15sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/namicIhpone"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/shop_number_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="phone"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人数："
+                android:textColor="#ff999999"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大人"
+                android:textColor="#ff999999"
+                android:textSize="10sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/namicBig"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shop_number_background"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位"
+                android:textColor="#ff999999"
+                android:textSize="10sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="小孩"
+                android:textColor="#ff999999"
+                android:textSize="10sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/namicMini"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shop_number_background"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位"
+                android:textColor="#ff999999"
+                android:textSize="10sp" >
+            </TextView>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/namicBiezhu"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shop_number_background"
+            android:gravity="top|left"
+            android:hint="备注"
+            android:padding="5dp"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ff16c407"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="立即报名"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

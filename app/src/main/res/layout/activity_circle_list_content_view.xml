@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <com.westars.framework.view.image.RoundImageView
+        android:id="@+id/user_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="sunshine"
+            android:textColor="#ff58bf42"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/circle_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="种菜得菜，种瓜得瓜"
+            android:textColor="#ff1d1d26" />
+
+        <com.my3w.farm.activity.circle.view.NoScrollGridView
+            android:id="@+id/imagelist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="#ffffffff"
+            android:numColumns="3"
+            android:verticalSpacing="5dp" >
+        </com.my3w.farm.activity.circle.view.NoScrollGridView>
+
+        <TextView
+            android:id="@+id/repay_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="点击评论"
+            android:textColor="#ff58bf42" />
+
+        <com.my3w.farm.activity.circle.view.NoScrollListView
+            android:id="@+id/commentlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#fff8f8f8"
+            android:divider="#fff8f8f8"
+            android:dividerHeight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+        </com.my3w.farm.activity.circle.view.NoScrollListView>
+    </LinearLayout>
+
+</LinearLayout>

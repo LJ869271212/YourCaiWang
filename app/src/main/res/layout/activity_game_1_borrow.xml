@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comment_title_bar_tools" />
+
+    <LinearLayout
+        android:id="@+id/title_select"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title_bar"
+        android:background="#ffffffff"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="筛选：" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/riqi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="日期" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/diqu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="地区" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/title_select"
+        android:background="#ffdddddd"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_borrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_line"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/add_borrow_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add_address"
+            android:gravity="center"
+            android:text="发布借换菜需求" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_line_2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/add_borrow"
+        android:background="#ffdddddd"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.westars.framework.view.list.ListExtView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/title_bottom"
+        android:layout_below="@+id/title_line_2"
+        android:divider="#ffffffff"
+        android:dividerHeight="0dp" >
+    </com.westars.framework.view.list.ListExtView>
+
+    <LinearLayout
+        android:id="@+id/title_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff58bf42"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/jiecai"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我要借菜"
+            android:textColor="#ffffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/huancai"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我要换菜"
+            android:textColor="#ffffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/jiecaixuqiu"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="借菜需求"
+            android:textColor="#ffffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/huancaixuqiu"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="换菜需求"
+            android:textColor="#ffffffff" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

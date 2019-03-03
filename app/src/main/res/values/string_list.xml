@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="list_release">你给我快放手！</string>
+    <string name="list_pull">再拉，再拉，继续拉！</string>
+    <string name="list_refreshing">等下，马上就出来了</string>
+    <string name="list_loadmore">加载更多中</string>
+
+</resources>
